@@ -26,14 +26,14 @@ function createBoard(size) {
 }
 
 function getSize() {
-    let input = prompt("Choose size of board");
+    let input = prompt("Select size of board (between 2 and 100)");
     let message = document.querySelector("#message");
     if(input == ""){
         message.innerHTML = "Please provide a number"
     } else if (input < 2 || input > 100){
         message.innerHTML = "Please choose a number between 2 and 100"
     } else {
-        message.innerHTML = "Have fun!"
+        message.innerHTML = ""
         return input;
     }
 }
